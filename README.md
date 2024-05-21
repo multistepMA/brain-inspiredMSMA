@@ -8,7 +8,7 @@ Malignant arrhythmias (MA), stemming from abnormalities in the neuronal signalin
 
 # Dataset
 1. MIT-BIH Malignant Ventricular Ectopy Database (MADB): https://physionet.org/content/vfdb/1.0.0/
-2. Sudden Cardiac Death Holter Database: https://physionet.org/content/sddb/1.0.0/
+2. Sudden Cardiac Death Holter Database (SCHDB): https://physionet.org/content/sddb/1.0.0/
 
 # Training and testing
 To train and test the brain-inspiredMSMA in the paper, run this command:
