@@ -10,7 +10,6 @@ numpydoc==1.1.0 \
 pandas==1.1.5 \
 scikit-learn==0.24.1 \
 scipy==1.5.4 \
-sklearn==0.0.post1 \
 tensorflow==2.6.2 \
 tqdm==4.59.0 \
 transformers==4.5.1 \
