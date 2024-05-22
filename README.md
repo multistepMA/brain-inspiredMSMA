@@ -1,7 +1,20 @@
 # A Brain-Inspired Model for Multi-Step Forecasting of Malignant Arrhythmias
 
 # Overview
-Malignant arrhythmias (MA), stemming from abnormalities in the neuronal signaling of the cardiac muscle, necessitate sophisticated predictive models for effective clinical management. Traditional machine learning models primarily rely on single-step forecasting and fail to capture the complex temporal dynamics of underlying arrhythmogenic processes. This paper introduces the first multi-step forecasting framework for MA, leveraging a brain-inspired approach that emulates and captures the neuronal signal transmission patterns embedded in electrocardiogram (ECG) data. Our framework comprises three key modules: (i) input module, (ii) multi-path propagation module, and (iii) multi-step forecasting module. The multi-path propagation module incorporates short-term and long-term paths that reflect the different time scales of neural information processing. We further introduce novel brain-inspired information processing units within this module. First, the local and global synaptic plasticity units extract the local and global temporal patterns in the ECG using temporal convolution blocks and cosine-similarity based pattern matching. The processed information is transmitted to the subsequent unit, as well as the Hebb-based learning unit, designed to model the neuromodulation of spike- and feature-level activations and connection strength of the pre- and post-synaptic neurons. Evaluated on two benchmark datasets, our model outperforms existing state-of-the-art models and baseline multi-step models in both short-term and long-term forecasting tasks. The results not only demonstrate the potential of our model in providing a robust clinical tool for fine-grained arrhythmia intervention but also offer valuable insights for advancing multi-step forecasting in other applications.
+Malignant arrhythmias (MA), stemming from abnormalities in the neuronal signaling of the cardiac muscle, necessitate sophisticated predictive models for effective clinical management. Traditional machine learning models primarily rely on single-step forecasting and fail to capture the complex temporal dynamics of underlying arrhythmogenic processes. 
+
+![Proposed_solution](https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/5f21acbd-865e-47d7-880d-28dbc218fb8a)
+
+We introduces the first multi-step forecasting framework for MA, leveraging a brain-inspired approach that emulates and captures the neuronal signal transmission patterns embedded in electrocardiogram (ECG) data. Our framework comprises three key modules: (i) input module, (ii) multi-path propagation module, and (iii) multi-step forecasting module. The multi-path propagation module incorporates short-term and long-term paths that reflect the different time scales of neural information processing. 
+
+
+![Overview](https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/457fbdb5-3382-40e5-b207-a3d8bd2ea014)
+
+We further introduce novel brain-inspired information processing units within this module. First, the local and global synaptic plasticity units extract the local and global temporal patterns in the ECG using temporal convolution blocks and cosine-similarity based pattern matching. The processed information is transmitted to the subsequent unit, as well as the Hebb-based learning unit, designed to model the neuromodulation of spike- and feature-level activations and connection strength of the pre- and post-synaptic neurons.
+![blocks](https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/28b06a5d-1e9d-4cf7-ab62-c6d646c77913)
+
+
+
 
 # Requirements
 To install requirements:
@@ -43,4 +56,6 @@ python evaluate.py --path <path_to_data> --model_save_dir <drectory_saved_model>
 ```
 
 # Results
+Evaluated on two benchmark datasets, our model outperforms existing state-of-the-art models and baseline multi-step models in both short-term and long-term forecasting tasks. The results not only demonstrate the potential of our model in providing a robust clinical tool for fine-grained arrhythmia intervention but also offer valuable insights for advancing multi-step forecasting in other applications.
+
 
