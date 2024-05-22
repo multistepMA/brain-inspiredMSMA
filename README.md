@@ -16,12 +16,28 @@ pip install -r requirements.txt
 2. Sudden Cardiac Death Holter Database (SCHDB): https://physionet.org/content/sddb/1.0.0/
 
 To process dataset as mentioned above, run this command:
-- readpath: original dataset path
-- outpath: save path of processed dataset
-  
-python preprocessing_SCHDB.py --path "readpath" --outpath "outpath" \
-python preprocessing_MADB.py --path "readpath" --outpath "outpath"
+For MADB:
+```bash
+python preprocessing_MADB.py --path <path_to_data> --outpath <path_to_processed_data>
+```
 
+For SCHDB:
+```bash
+python preprocessing_SCHDB.py --path <path_to_data> --outpath <path_to_processed_data>
+```
 
-# Training and testing
-To train and test the brain-inspiredMSMA in the paper, run this command:
+- path_to_data: original dataset path
+- path_to_processed_data: save path of processed dataset
+ 
+
+# Training
+To train the model in the paper, run this command:
+```bash
+python train.py
+```
+
+# Evaluation
+To evaluate the model in the paper, run this command:
+```bash
+python evaluate.py
+```
