@@ -57,7 +57,8 @@ python evaluate.py --path <path_to_data> --model_save_dir <drectory_saved_model>
 
 # Results
 Evaluated on two benchmark datasets, our model outperforms existing state-of-the-art models and baseline multi-step models in both short-term and long-term forecasting tasks. The results not only demonstrate the potential of our model in providing a robust clinical tool for fine-grained arrhythmia intervention but also offer valuable insights for advancing multi-step forecasting in other applications.
-<p align="center"><img src = https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/b447c626-8e00-4713-8c1a-7742ed934312  width="70%" height="50%"></p>
 
+<p align="center"><img src = https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/d077dafd-bbcc-4b21-b129-d9c16e910872 width="70%" height="50%"></p>
+<p align="center"><img src = https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/5276c092-63d8-4c05-a908-39a6ed3f680c width="70%" height="50%"></p>
 <p align="center"><img src = https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/f1358678-3c57-476c-bff4-d73ed108c999  width="70%" height="50%"></p>
 
