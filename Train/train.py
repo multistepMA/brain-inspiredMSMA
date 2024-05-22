@@ -12,24 +12,24 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--read_path', type=str, default='./')
-parser.add_argument('--read_sig_path', type=str, default='./')
-parser.add_argument('--batch_size', type=int, default=16)
-parser.add_argument('--epochs', type=int, default=20)
-parser.add_argument('--model_save_dir', type=str, default='./')
-parser.add_argument('--model_name', type=str, default='bsMSF')
+parser.add_argument('--read_path', type=str, default='./')              # Read labeling data 
+parser.add_argument('--read_sig_path', type=str, default='./')          # Read signal data
+parser.add_argument('--batch_size', type=int, default=16)               # Batch size
+parser.add_argument('--epochs', type=int, default=20)                   # Ephochs
+parser.add_argument('--model_save_dir', type=str, default='./')         # Path of saving model
+parser.add_argument('--model_name', type=str, default='bsMSF')          # Model name saved
 
-parser.add_argument('--lr', type=float, default=0.00005)
+parser.add_argument('--lr', type=float, default=0.00005)                # Learning rate
 
-parser.add_argument('--input_length', type=int, default=2500)
-parser.add_argument('--dilation', type=int, default=2)
-parser.add_argument('--model_width', type=int, default=62)
-parser.add_argument('--num_channel', type=int, default=1)
+parser.add_argument('--input_length', type=int, default=7500)           # Input length(Sampling rate * 30 s)
+parser.add_argument('--dilation', type=int, default=2)                  # Causal convolution filter size
+parser.add_argument('--model_width', type=int, default=62)              # Model width
+parser.add_argument('--num_channel', type=int, default=1)               # Number of ECG channel
 
-parser.add_argument('--output_nums', type=int, default=5)
+parser.add_argument('--output_nums', type=int, default=5)               # Number of multi-step 
 
-parser.add_argument('--multi_path', type=str, default='long_term')
-parser.add_argument('--forecasting_module', type=str, default=True)
+parser.add_argument('--multi_path', type=str, default='long_term')      # Path selection
+parser.add_argument('--forecasting_module', type=str, default=True)     # Forecasting module selection
 
 args, unknown = parser.parse_known_args()
 if __name__ == '__main':
