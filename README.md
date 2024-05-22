@@ -6,7 +6,7 @@ Malignant arrhythmias (MA), stemming from abnormalities in the neuronal signalin
 
 <p align="center"><img src=https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/5f21acbd-865e-47d7-880d-28dbc218fb8a width="70%" height="50%"></p>
 
-We introduces the first multi-step forecasting framework for MA, leveraging a brain-inspired approach that emulates and captures the neuronal signal transmission patterns embedded in electrocardiogram (ECG) data. Our framework comprises three key modules: (i) input module, (ii) multi-path propagation module, and (iii) multi-step forecasting module. The multi-path propagation module incorporates short-term and long-term paths that reflect the different time scales of neural information processing. 
+We introduces the first multi-step forecasting framework for MA (MSMA), leveraging a brain-inspired approach that emulates and captures the neuronal signal transmission patterns embedded in electrocardiogram (ECG) data. Our framework comprises three key modules: (i) input module, (ii) multi-path propagation module, and (iii) multi-step forecasting module. The multi-path propagation module incorporates short-term and long-term paths that reflect the different time scales of neural information processing. 
 
 
 <p align="center"><img src = https://github.com/multistepMA/brain-inspiredMSMA/assets/170433512/457fbdb5-3382-40e5-b207-a3d8bd2ea014 width="70%" height="50%"></p>
