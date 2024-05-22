@@ -21,5 +21,13 @@ wfdb==3.3.0
 1. MIT-BIH Malignant Ventricular Ectopy Database (MADB): https://physionet.org/content/vfdb/1.0.0/
 2. Sudden Cardiac Death Holter Database (SCHDB): https://physionet.org/content/sddb/1.0.0/
 
+To process dataset as mentioned above, run this command:
+- readpath: original dataset path
+- outpath: save path of processed dataset
+  
+python preprocessing_SCHDB.py --path "<readpath>" --outpath "<outpath>" \
+python preprocessing_MADB.py --path "<readpath>" --outpath "<outpath>"
+
+
 # Training and testing
 To train and test the brain-inspiredMSMA in the paper, run this command:
