@@ -33,13 +33,13 @@ python preprocessing_SCHDB.py --path <path_to_data> --outpath <path_to_processed
 # Training
 To train the model in the paper, run this command:
 ```bash
-python train.py
+python train.py --path <path_to_data> --model_save_dir <drectory_saved_model> --outpath <path_to_processed_data> --model_name <model_name_saved>
 ```
 
 # Evaluation
 To evaluate the model in the paper, run this command:
 ```bash
-python evaluate.py
+python evaluate.py --path <path_to_data> --model_save_dir <drectory_saved_model> --outpath <path_to_processed_data> --model_name <model_name_saved>
 ```
 
 # Results
