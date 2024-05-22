@@ -25,8 +25,8 @@ To process dataset as mentioned above, run this command:
 - readpath: original dataset path
 - outpath: save path of processed dataset
   
-python preprocessing_SCHDB.py --path "<readpath>" --outpath "<outpath>" \
-python preprocessing_MADB.py --path "<readpath>" --outpath "<outpath>"
+python preprocessing_SCHDB.py --path "readpath" --outpath "outpath" \
+python preprocessing_MADB.py --path "readpath" --outpath "outpath"
 
 
 # Training and testing
